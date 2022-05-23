@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Neon Snake Game</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="manifest" href="/manifest.json" />
+
+        <!-- / ICON -->
+        <link rel="icon" href="/img/icon.png" />
+        <!-- / NULL STYLE -->
+        <link rel="stylesheet" href="css/null.css" />
+        <!-- / STYLE -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="installContainer" class="hidden"></div>
+        <script src="/script.js" defer></script>
+        <div
+            class="glitchButton"
+            style="position: fixed; top: 20px; right: 20px"
+        ></div>
+        <script src="https://button.glitch.me/button.js"></script>
+
+        <div class="sidebar">
+            <div class="container">
+                <div class="left">
+                    <div class="container">
+                        <!-- / Speed -->
+                        <div class="speed">
+                            <div id="speed1">Speed 1</div>
+                            <div id="speed2">Speed 2</div>
+                            <div id="speed3">Speed 3</div>
+                            <div id="speed4">Speed 4</div>
+                            <div id="speed5">Speed 5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="container">
+                        <!-- / Food -->
+                        <div id="food" class="food">
+                            <div id="goto-skins">Go to Skins</div>
+                            <div id="food1">1 Berry</div>
+                            <div id="food2">2 Berries</div>
+                            <div id="food3">3 Berries</div>
+                        </div>
+                        <!-- / Skins -->
+                        <div id="skins" class="skins hidden">
+                            <div id="goto-food">Go to Berries</div>
+                            <div id="skin1">Pink Lemonade</div>
+                            <div id="skin2">Blue Sky</div>
+                            <div id="skin3">Red Strawberry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="canvas-flex" class="canvas-flex color-pink">
+            <div class="score">
+                <div id="score" class="realtime-score">Score:</div>
+                <div id="max" class="max-score">Max Score:</div>
+            </div>
+            <div class="canvas-wrapper">
+                <!-- <canvas id="game" width="400" height="400"></canvas> -->
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <!-- GAME SCRIPT -->
+        <script src="/js/game.js" type="module"></script>
+    </body>
+</html>

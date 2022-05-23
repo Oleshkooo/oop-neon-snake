@@ -1,0 +1,18 @@
+{
+  "short_name": "Neon Snake",
+  "name": "Neon Snake",
+  "description": "The Best Snake Game",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#353235",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#353235"
+}
